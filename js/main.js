@@ -12,12 +12,12 @@
 
 // CREATING ARRAY WITH A LIST OF SURNAMES
 
-var surnames = ['Rossi' , 'Ferilli' , 'Bianchi' , 'Leva' , 'Esterni'];
+var surnames = ['rossi' , 'ferilli' , 'bianchi' , 'leva' , 'esterni'];
 // console.log(surnames);
 
 // ASKING THE USER TO WRITE HIS SURNAME
 
-var userSurname = prompt('Please enter your Surname here:');
+var userSurname = prompt('Please enter your Surname here:').toLowerCase().trim();
 // console.log(userSurname);
 
 // ADDING USER'S SURNAME TO THE ARRAY
@@ -35,3 +35,17 @@ console.log('Surnames after sorting: ' + surnames);
 var humanIndex = surnames.indexOf(userSurname) + 1;
 console.log('User\'s Human Index: ' + humanIndex);
 
+// CREATING VARIABLE TO USE TO GENERATE AN OUTPUT ON HTML
+
+var item = '';
+
+// LOOP TO CREATING LI FOR THE UL IN HTML
+
+for( var i = 0; i < surnames.length; i++) {
+    item += '<li>' + surnames[i] + '</li>';
+}
+
+// OUTPUT IN HTML OF THE LIST
+document.getElementById('surnames-list').innerHTML = item;
+// OUTPUT IN HTML OF THE "HUMAN" INDEX OF USER'S SURNAME
+document.getElementById('human-index').innerHTML = 'User\'s Index in the List is: ' + humanIndex;

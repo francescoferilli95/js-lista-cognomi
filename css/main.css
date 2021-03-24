@@ -1,0 +1,50 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background-image: linear-gradient(to left, #053660 , #663016);
+    color: #fff;
+}
+
+/* HEADER */
+
+.title {
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-bottom: 5px solid #fff;
+}
+
+/* MAIN */
+
+#surnames-list {
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+#surnames-list li {
+    list-style: none;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    background: #eee;
+    color: #000;
+}
+
+#human-index {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    background: #eee;
+    color: #000;
+}
